@@ -29,13 +29,13 @@ export const About = () => {
         
         <div className="max-w-3xl mx-auto mb-12">
           <p className="text-lg text-muted-foreground mb-6">
-            I'm a full-stack developer with a passion for creating elegant solutions 
+            I&apos;m a full-stack developer with a passion for creating elegant solutions 
             to complex problems. With expertise in modern web technologies, I focus on 
             building applications that are not only functional but also beautiful and 
             performant.
           </p>
           <p className="text-lg text-muted-foreground">
-            When I'm not coding, you'll find me exploring new technologies, 
+            When I&apos;m not coding, you&apos;ll find me exploring new technologies, 
             contributing to open source, or sharing knowledge with the developer community.
           </p>
         </div>

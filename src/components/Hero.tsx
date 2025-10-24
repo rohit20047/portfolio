@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { TypingText } from "./TypingText";
 
 export const Hero = () => {
   const scrollToProjects = () => {
@@ -16,10 +17,12 @@ export const Hero = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
             Full Stack Developer
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Building elegant solutions to complex problems. <br />
-            Passionate about clean code and great user experiences.
-          </p>
+          <div className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            <TypingText 
+              text="Building elegant solutions to complex problems. Passionate about clean code and great user experiences." 
+              delay={30}
+            />
+          </div>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button 
               onClick={scrollToProjects}

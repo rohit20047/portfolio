@@ -17,7 +17,7 @@ export const Contact = () => {
         </h2>
         
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-          I'm always open to new opportunities and interesting projects. 
+          I&apos;m always open to new opportunities and interesting projects. 
           Whether you have a question or just want to say hi, feel free to reach out!
         </p>
 

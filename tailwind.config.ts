@@ -83,10 +83,19 @@ export default {
             height: "0",
           },
         },
+        typing: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        },
+        blink: {
+          "0%, 100%": { borderColor: "transparent" },
+          "50%": { borderColor: "currentColor" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        typing: "typing 3.5s steps(40, end), blink 0.75s step-end infinite",
       },
     },
   },
