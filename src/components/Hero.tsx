@@ -26,13 +26,14 @@ export const Hero = () => {
           <div className="flex gap-4 justify-center flex-wrap">
             <Button 
               onClick={scrollToProjects}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="bg-coffee hover:bg-coffee-dark text-primary-foreground"
             >
               View My Work
             </Button>
             <Button 
               variant="outline"
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              className="border-coffee text-coffee hover:bg-coffee hover:text-primary-foreground"
             >
               Get In Touch
             </Button>

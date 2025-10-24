@@ -29,6 +29,10 @@ All colors MUST be HSL.
     --accent: 0 0% 10%;
     --accent-foreground: 0 0% 100%;
 
+    --coffee: 25 50% 45%;
+    --coffee-light: 30 40% 70%;
+    --coffee-dark: 20 60% 25%;
+
     --destructive: 0 0% 20%;
     --destructive-foreground: 0 0% 100%;
 
@@ -62,6 +66,10 @@ All colors MUST be HSL.
 
     --accent: 0 0% 90%;
     --accent-foreground: 0 0% 0%;
+
+    --coffee: 25 50% 45%;
+    --coffee-light: 30 40% 70%;
+    --coffee-dark: 20 60% 25%;
 
     --destructive: 0 0% 80%;
     --destructive-foreground: 0 0% 0%;
