@@ -6,7 +6,7 @@ const Terminal = () => {
     { cmd: "cat about.txt", output: "Full-stack developer passionate about building elegant solutions" },
     { cmd: "ls skills/", output: "React  TypeScript  Node.js  Python  Docker  AWS" },
     { cmd: "whoami", output: "developer@portfolio:~$" },
-    { cmd: "echo $PASSION", output: "Coffee + Code = ❤️" },
+    { cmd: "echo $PASSION", output: "Coffee + Code = ..." },
   ];
 
   useEffect(() => {

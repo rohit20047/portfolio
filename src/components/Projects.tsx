@@ -6,25 +6,23 @@ import { Badge } from "@/components/ui/badge";
 export const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration and admin dashboard",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      title: "Contributed to Cipher (Byterover)",
+      description: "Worked on Cipher, an open-source AI memory layer for AI agents. I made a few contributions and explored how AI retains context",
+      tags: ["MCP", "TypeScript", "CLI", "Next.js"],
+      github: "https://github.com/rohit20047/cipher",
+      demo: "https://www.byterover.dev/",
+    },
+    {
+      title: "2D floor plan to interactive 3D model",
+      description: "Collaborative tool for converting 2D floor plans into interactive 3D models using Three.js and adding custom catalog items",
+      tags: ["jquery", "Three.js", "node js ", "Grunt"],
       github: "#",
       demo: "#",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates and team features",
-      tags: ["TypeScript", "React", "Firebase", "Tailwind"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather application with location-based forecasts and data visualization",
-      tags: ["React", "API Integration", "Charts.js"],
-      github: "#",
-      demo: "#",
+      title: "Multi step local RAG application",
+      description: "A local RAG app using Ollama and Qdrant, with Docker for easy setup. It handles document processing, embedding, and querying in steps.",
+      tags: ["Ollama", "Qdrant", "docker", "Next.js"]
     },
   ];
 
@@ -32,7 +30,7 @@ export const Projects = () => {
     <section id="projects" className="py-20 px-6 bg-secondary/30">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          <span className="text-primary">{">"}</span> Projects
+          <span className="text-primary">{">"}</span> <span className="text-coffee">My </span>Work...
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -53,14 +51,43 @@ export const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/90">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Demo
-                  </Button>
+                  {project.github && project.github !== "#" ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button variant="outline" size="sm" className="w-full">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button variant="outline" size="sm" className="flex-1" disabled>
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </Button>
+                  )}
+
+                  {project.demo && project.demo !== "#" ? (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button size="sm" className="w-full bg-primary hover:bg-primary/90">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Demo
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button size="sm" className="flex-1 bg-primary/90" disabled>
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Demo
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

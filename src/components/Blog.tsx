@@ -3,6 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 
 export const Blog = () => {
+  // NOTE: Update the `url` values to your actual Hashnode post URLs or profile.
+  // Current default uses a placeholder that opens your Hashnode home — replace with exact post links if available.
   const posts = [
     {
       title: "Building Scalable Web Applications",
@@ -10,6 +12,7 @@ export const Blog = () => {
       date: "2024-03-15",
       readTime: "5 min read",
       tags: ["Architecture", "Best Practices"],
+      url: "https://mylearningindevelopment.hashnode.dev/connecting-cloudflare-workers-to-postgresql-using-prisma-accelerate-and-hono",
     },
     {
       title: "The Power of TypeScript",
@@ -17,6 +20,7 @@ export const Blog = () => {
       date: "2024-03-10",
       readTime: "4 min read",
       tags: ["TypeScript", "Development"],
+      url: "https://mylearningindevelopment.hashnode.dev/connecting-cloudflare-workers-to-postgresql-using-prisma-accelerate-and-hono",
     },
     {
       title: "Modern CSS Techniques",
@@ -24,6 +28,7 @@ export const Blog = () => {
       date: "2024-03-05",
       readTime: "6 min read",
       tags: ["CSS", "Design"],
+      url: "https://rohit.hashnode.dev",
     },
   ];
 
@@ -36,10 +41,14 @@ export const Blog = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {posts.map((post, index) => (
-            <Card 
-              key={index} 
-              className="bg-card border-border hover:border-foreground transition-all hover:shadow-lg cursor-pointer"
+            <a
+              key={index}
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
             >
+              <Card className="bg-card border-border hover:border-foreground transition-all hover:shadow-lg cursor-pointer">
               <CardHeader>
                 <div className="flex items-center gap-4 text-xs text-muted-foreground mb-2">
                   <span className="flex items-center gap-1">
@@ -65,7 +74,8 @@ export const Blog = () => {
                   ))}
                 </div>
               </CardContent>
-            </Card>
+              </Card>
+            </a>
           ))}
         </div>
       </div>

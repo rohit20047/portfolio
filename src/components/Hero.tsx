@@ -12,15 +12,15 @@ export const Hero = () => {
       <div className="container mx-auto text-center">
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <p className="text-primary text-sm md:text-base mb-4">
-            {">"} Hello World
+            {">"} Hello World...It's <span className="text-coffee">Rohit</span> Here!
           </p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-            Full Stack Developer
+          <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-6">
+        Yup,this <span className="text-coffee">".tech"</span>  website is about me...
           </h1>
           <div className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
             <TypingText 
-              text="Building elegant solutions to complex problems. Passionate about clean code and great user experiences." 
-              delay={30}
+              text="I’m into tech...it’s part of me now. No going back, I guess. Connect if you’re addicted to learning too ☕︎..." 
+              delay={50}
             />
           </div>
           <div className="flex gap-4 justify-center flex-wrap">
