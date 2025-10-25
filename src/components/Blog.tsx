@@ -7,28 +7,28 @@ export const Blog = () => {
   // Current default uses a placeholder that opens your Hashnode home — replace with exact post links if available.
   const posts = [
     {
-      title: "Building Scalable Web Applications",
+      title: "Using Prisma with Cloudflare Workers and Hono to Connect to PostgreSQL",
       excerpt: "Exploring best practices for creating applications that grow with your business needs.",
-      date: "2024-03-15",
-      readTime: "5 min read",
-      tags: ["Architecture", "Best Practices"],
+      date: "2025-02-12",
+      readTime: "3 min read",
+      tags: ["Hono", "Prisma","Cloudflare Workers"],
       url: "https://mylearningindevelopment.hashnode.dev/connecting-cloudflare-workers-to-postgresql-using-prisma-accelerate-and-hono",
     },
     {
-      title: "The Power of TypeScript",
+      title: "Fixing ‘ECONNREFUSED ::1’: IPv4, IPv6 & Port Binding Explained",
       excerpt: "How TypeScript transforms JavaScript development and catches errors before runtime.",
-      date: "2024-03-10",
-      readTime: "4 min read",
-      tags: ["TypeScript", "Development"],
-      url: "https://mylearningindevelopment.hashnode.dev/connecting-cloudflare-workers-to-postgresql-using-prisma-accelerate-and-hono",
+      date: "2024-01-26",
+      readTime: "3 min read",
+      tags: ["Port Binding", "IPv4", "IPv6","ollama"],
+      url: "https://starting-my-langchain.hashnode.dev/understanding-and-resolving-the-econnrefused-1-error-a-beginners-guide-to-ipv4-ipv6-and-port-binding",
     },
     {
-      title: "Modern CSS Techniques",
-      excerpt: "Leveraging CSS Grid, Flexbox, and modern properties for beautiful layouts.",
-      date: "2024-03-05",
-      readTime: "6 min read",
-      tags: ["CSS", "Design"],
-      url: "https://rohit.hashnode.dev",
+      title: "Coming Soon...",
+      excerpt: "I’m committing to being more consistent and productive in writing blogs, sharing my ideas, and improving my skills.",
+      date: "yyyy-mm-dd",
+      readTime: "must read",
+      tags: ["Rohit", "I_Will_Update"],
+      url: "#",
     },
   ];
 
@@ -36,7 +36,7 @@ export const Blog = () => {
     <section id="blog" className="py-20 px-6">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          <span className="text-primary">{">"}</span> Blog
+          <span className="text-primary">{">"}</span><span className="text-coffee">Blog</span>
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -60,8 +60,8 @@ export const Blog = () => {
                     {post.readTime}
                   </span>
                 </div>
-                <CardTitle className="text-xl">{post.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardTitle className="text-xl ">{post.title}</CardTitle>
+                <CardDescription className="text-muted-foreground text-coffee">
                   {post.excerpt}
                 </CardDescription>
               </CardHeader>
