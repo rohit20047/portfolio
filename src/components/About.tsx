@@ -39,7 +39,7 @@ export const About = () => {
               I’m 22 and working as a junior software developer. I built full-stack apps with Node.js and Next.js, and I’ve tinkered with adding AI into real projects too.
             </p>
             <p className="text-lg text-muted-foreground">
-            I enjoy diving into complex codebases...they’re like big machines with tons of parts. I love breaking them down to see how everything works. Lately, I’ve been getting into Rust and low-level stuff...it’s challenging but super satisfying to learn.
+            I enjoy diving into complex codebases...they’re like big machines with tons of parts. I love breaking them down to see how everything works. Lately, I’ve been getting into Go and low-level stuff...it’s challenging but super satisfying to learn.
             </p>
           </div>
         </div>

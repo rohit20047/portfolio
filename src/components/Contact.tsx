@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 export const Contact = () => {
   const socials = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Github, href: "https://github.com/rohit20047", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/rohit-reddy-6344011b4/", label: "LinkedIn" },
+    { icon: Twitter, href: "https://x.com/EROHITH4", label: "Twitter" },
     { icon: Mail, href: "mailto:contact@example.com", label: "Email" },
   ];
 
