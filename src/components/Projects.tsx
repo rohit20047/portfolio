@@ -2,6 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Reveal } from "@/components/ui/reveal";
 
 export const Projects = () => {
   const projects = [
@@ -28,7 +29,8 @@ export const Projects = () => {
 
   return (
     <section id="projects" className="py-20 px-6 bg-secondary/30">
-      <div className="container mx-auto">
+      <Reveal>
+        <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           <span className="text-primary">{">"}</span> <span className="text-coffee">My </span>Work...
         </h2>
@@ -93,7 +95,8 @@ export const Projects = () => {
             </Card>
           ))}
         </div>
-      </div>
+        </div>
+      </Reveal>
     </section>
   );
 };

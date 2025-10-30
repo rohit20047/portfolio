@@ -1,5 +1,6 @@
 import { Code2, Terminal , Bug } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Reveal } from "@/components/ui/reveal";
 
 export const About = () => {
   const highlights = [
@@ -22,7 +23,8 @@ export const About = () => {
 
   return (
     <section id="about" className="py-20 px-6">
-      <div className="container mx-auto">
+      <Reveal>
+        <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           <span className="text-primary">{">"}</span> About <span className="text-coffee">Me...</span>
         </h2>
@@ -55,7 +57,8 @@ export const About = () => {
             </Card>
           ))}
         </div>
-      </div>
+        </div>
+      </Reveal>
     </section>
   );
 };

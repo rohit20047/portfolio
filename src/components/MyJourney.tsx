@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Reveal } from "@/components/ui/reveal";
 
 export const MyJourney = () => {
   const milestones = [
@@ -30,7 +31,8 @@ export const MyJourney = () => {
 
   return (
     <section id="journey" className="py-20 px-6 bg-secondary/30">
-      <div className="container mx-auto">
+      <Reveal>
+        <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           <span className="text-primary">{">"}</span> My Journey
         </h2>
@@ -77,7 +79,8 @@ export const MyJourney = () => {
             ))}
           </div>
         </div>
-      </div>
+        </div>
+      </Reveal>
     </section>
   );
 };

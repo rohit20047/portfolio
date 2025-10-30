@@ -1,6 +1,7 @@
 import { Calendar, Clock } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Reveal } from "@/components/ui/reveal";
 
 export const Blog = () => {
   // NOTE: Update the `url` values to your actual Hashnode post URLs or profile.
@@ -34,7 +35,8 @@ export const Blog = () => {
 
   return (
     <section id="blog" className="py-20 px-6">
-      <div className="container mx-auto">
+      <Reveal>
+        <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           <span className="text-primary">{">"}</span><span className="text-coffee">Blog</span>
         </h2>
@@ -78,7 +80,8 @@ export const Blog = () => {
             </a>
           ))}
         </div>
-      </div>
+        </div>
+      </Reveal>
     </section>
   );
 };

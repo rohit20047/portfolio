@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Reveal } from "@/components/ui/reveal";
 
 export const Contact = () => {
   const socials = [
@@ -11,7 +12,8 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="py-20 px-6 bg-secondary/30">
-      <div className="container mx-auto text-center">
+      <Reveal>
+        <div className="container mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">
           <span className="text-primary">{">"}</span> Get In Touch
         </h2>
@@ -46,7 +48,8 @@ export const Contact = () => {
             Send Me an Email
           </a>
         </Button>
-      </div>
+        </div>
+      </Reveal>
     </section>
   );
 };
