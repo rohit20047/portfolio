@@ -6,7 +6,7 @@ export const Contact = () => {
     { icon: Github, href: "https://github.com/rohit20047", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/rohit-reddy-6344011b4/", label: "LinkedIn" },
     { icon: Twitter, href: "https://x.com/EROHITH4", label: "Twitter" },
-    { icon: Mail, href: "mailto:contact@example.com", label: "Email" },
+  { icon: Mail, href: "mailto:rohithreddyedulla@gmail.com", label: "Email" },
   ];
 
   return (
@@ -42,7 +42,7 @@ export const Contact = () => {
           className="bg-primary hover:bg-primary/90 text-primary-foreground"
           asChild
         >
-          <a href="mailto:contact@example.com">
+          <a href="mailto:rohithreddyedulla@gmail.com">
             Send Me an Email
           </a>
         </Button>
