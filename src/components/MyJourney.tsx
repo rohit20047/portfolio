@@ -4,20 +4,32 @@ import { Reveal } from "@/components/ui/reveal";
 export const MyJourney = () => {
   const milestones = [
     {
+      year: "2026",
+      title: "Galactic Git (Side Hustle)",
+      description: "Started GalacticGit, a side hustle, and created rapidlynk.dev under it.",
+      position: "right",
+    },
+    {
+      year: "2025",
+      title: "Junior Software Engineer",
+      description: "Worked as a Junior Software Engineer for 1 year, gaining hands-on experience across the development lifecycle.",
+      position: "left",
+    },
+    {
       year: "2024",
-      title: "Senior Full Stack Developer",
-      description: "Leading development of enterprise applications with modern tech stack.",
+      title: "Data Engineer Intern & Software Intern",
+      description: "Worked at 2 internships as a Data Engineer Intern and a Software Intern.",
       position: "right",
     },
     {
       year: "2022",
-      title: "Full Stack Developer",
+      title: "Full Stack Developer (Learning)",
       description: "Building scalable web applications and RESTful APIs for diverse clients.",
       position: "left",
     },
     {
       year: "2020",
-      title: "Frontend Developer",
+      title: "Frontend Developer (Learning)",
       description: "Creating responsive user interfaces with React and modern CSS.",
       position: "right",
     },

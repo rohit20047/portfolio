@@ -7,6 +7,13 @@ import { Reveal } from "@/components/ui/reveal";
 export const Projects = () => {
   const projects = [
     {
+      title: "RapidLynk",
+      description: "RapidLynk is a Go-based command-line tool that enables fast, secure file sharing using end-to-end encryption, allowing developers to transfer files with a single command while ensuring data privacy and integrity.",
+      tags: ["Go", "CLI", "Encryption"],
+      github: "https://github.com/Galactic-git/rapidlynk",
+      demo: "https://rapidlynk.dev",
+    },
+    {
       title: "Contributed to Cipher (Byterover)",
       description: "Worked on Cipher, an open-source AI memory layer for AI agents. I made a few contributions and explored how AI retains context",
       tags: ["MCP", "TypeScript", "CLI", "Next.js"],
