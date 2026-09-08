@@ -11,7 +11,7 @@ export const Projects = () => {
       description: "RapidLynk is a Go-based command-line tool that enables fast, secure file sharing using end-to-end encryption, allowing developers to transfer files with a single command while ensuring data privacy and integrity.",
       tags: ["Go", "CLI", "Encryption"],
       github: "https://github.com/Galactic-git/rapidlynk",
-      demo: "https://rapidlynk.dev",
+      demo: "https://rapidlynk.rohitreddy.tech",
     },
     {
       title: "Contributed to Cipher (Byterover)",
